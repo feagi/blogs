@@ -22,8 +22,8 @@ Edits are usually very minimal, and chiefly concerned with grammar and spelling.
 - Prefer `.mp4` or `.webp` to `.gif` (GIFs can be 5-10 times larger than an efficiently encoded MP4)
 - Prefer `.webp` to other types for image files (you can convert free online)
 - Downsize images as much as possible to the max size you might want to see it have on the website
-- If you'd like to embed a Youtube video, get the embedded URL and use this structure where the alt text is "iframe": ![iframe](https://www.youtube.com/embed/-HVevxqqUOM?si=e5nc5AJ5xmoWx8sN)
-- If you'd like to add a locally stored video, use this structure where the alt text is "video": ![video](example.jpg)
+- If you'd like to embed a Youtube video, get the embedded URL and use this structure where the alt text is "iframe": `![iframe](https://www.youtube.com/embed/-HVevxqqUOM?si=e5nc5AJ5xmoWx8sN)`
+- If you'd like to add a locally stored video, use this structure where the alt text is "video": `![video](example.jpg)`
 
 ## Markdown Syntax
 - Don't use HTML (e.g., `<img src="cat.jpg"/>`)
