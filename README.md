@@ -5,7 +5,7 @@ Welcome to the FEAGI blog repository! We welcome all blog submissions that showc
 By submitting a blog post to this repository, you agree to the following terms:
 
 1. **You retain copyright** over your content.
-2. **You grant Neuraville Inc.** a **non-exclusive, royalty-free, and perpetual license** to publish, display, and distribute your content on the [Neurorobotics Studio](www.neurorobotics.studio/blog) website and related platforms.
+2. **You grant Neuraville Inc.** a **non-exclusive, royalty-free, and perpetual license** to publish, display, and distribute your content on the [Neurorobotics Studio](https://neurorobotics.studio/blog) website and related platforms.
 3. Your content will be published under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**, meaning others can share, adapt, and use it commercially, provided they credit you and distribute any derivative works under the same license.
 4. You confirm that your submission does not infringe upon the intellectual property rights of others and that you have all necessary rights to submit the content.
 
