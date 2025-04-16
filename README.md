@@ -4,12 +4,19 @@ We welcome all blog submissions that showcase integrations with FEAGI or the use
 
 Make sure the submission is prepared in markdown format and follows the guidelines in this document. When you are ready, simply make a PR on this repositoty. Blogs will be hosted on https://neurorobotics.studio/blog
 
+## Adding a Blog to the Repo
+- Create a directory for your blog
+- Add your blog as an md file
+- Add media in the same directory (if you have a file too large for Github, save it in a location you can share, such as Google Drive, and put the link to it in your md)
+
+- ## Copyright
+
+<<NADJI: ADD CONTENT HERE>>
 
 ## General Suggestions
 
 - Include rich media as much as possible. Videos are highly encouraged and we do not have any size limitation as we will host your video on YouTube and embed it inside your blog so the higher quality the video the better.
 - Be genuine and share your experience.
-
 
 ## ❗ We May Edit Your Content
 
