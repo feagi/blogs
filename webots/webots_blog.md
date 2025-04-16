@@ -9,7 +9,7 @@ To achieve this, we developed a custom Webots controller that acts as a communic
 ## Exploring Webots
 
 Webots provides a rich environment to simulate a wide variety of robots. Its real-time sensor and actuator interface made it a perfect match for experimenting with brain-controlled behavior. Before diving into integration, we explored the Webots system independently to get comfortable with its environment, learning how to extract and print sensor data and articulate the robot by feeding motors commands.
-![Screenshot-2025-04-10-112843.png](Screenshot-2025-04-10-112843.png "pr2 robot")
+![pr2 sample world](../content/Pr2-sample-world.png)
 *Webots sample world with robot called pr2 and a table with objects for it to pick up*
 
 ## Development 
@@ -45,8 +45,8 @@ We designed a custom genome that mapped neurons to the robot's sensors and actua
 - **Continuous Camera Output Lag**  
   Streaming camera frames to FEAGI introduced noticeable latency and performance issues.
 
-- **Colab Pro Limitations**  
-  Colab’s performance limits and unexpected costs led us to cancel premium contracts and seek local alternatives.
+During development we faced a few hurtles that we had to overcome. The first challenge was setting up and running FEAGI on our local machines. The 
+
 
 
 
