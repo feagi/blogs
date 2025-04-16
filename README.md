@@ -17,7 +17,7 @@ For more details on licensing, please refer to the [LICENSE](LICENSE) file.
 
 Make sure the submission is prepared in markdown format and follows the guidelines in this document. When you are ready, simply make a PR on this repositoty. Blogs will be hosted on https://neurorobotics.studio/blog
 
-## Adding a Blog to the Repo
+## Organizing Blog Content
 - Create a directory for your blog
 - Add your blog as an md file
 - Add media in the same directory (if you have a file too large for Github, save it in a location you can share, such as Google Drive, and put the link to it in your md)
@@ -43,7 +43,7 @@ Edits are usually very minimal, and chiefly concerned with grammar and spelling.
 ## How to Submit
 
 1. Fork this repository.
-2. Add your blog post folder to the `content/` folder.
+2. Add your blog folder under the `content/` folder.
 3. Submit a pull request (PR) with your changes.
 
 We look forward to your contributions!
