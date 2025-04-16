@@ -23,18 +23,13 @@ We were then provided with a FEAGI connector template file that created a pipeli
 When speaking to FEAGI, data needs to be formatted in a specific way. For example, a problem that we faced was processing the data from camera or lidar sensors in webots. Webot's cameras send data as a string of bits in RGBA, and FEAGI needs a 2D array holding R,G, and B, arrays. We needed to convert the string to properly formatted arrays, and then delete the A channel. 
 
 
-The final thing we worked on for this project was creating a sample genome. A genome is instructions for ea
+## Genome 
+Lastly, we each designed a custom genome (available [here](https://github.com/feagi/feagi/tree/staging/community_genomes)) that allow for more complex control patterns. The salamander and pioneer2 genomes both move the robot in a straight line unless there is a wall in front of them, in which case they turn to avoid it. The Tiago genome allows it to move forward and backward.
 
-
-## Genome Design
-We designed a custom genome that mapped neurons to the robot's sensors and actuators, enabling more complex control patterns like obstacle avoidance or light following.
 (insert genome video)
 
-
-
-
-
 ## Challenges
+We faced a few challenges while completing this project, some of which we have already mentioned above. Others are listed below
 
 - **Outdated Webots Documentation**  
   Some examples were broken or referenced deprecated APIs.
@@ -45,12 +40,5 @@ We designed a custom genome that mapped neurons to the robot's sensors and actua
 - **Continuous Camera Output Lag**  
   Streaming camera frames to FEAGI introduced noticeable latency and performance issues.
 
-- **Colab Pro Limitations**  
-  Colab’s performance limits and unexpected costs led us to cancel premium contracts and seek local alternatives.
-
-
-
-
 ## Final Thoughts
-
 Despite challenges, we successfully achieved integration between Webots and FEAGI. Anyone curious or inspired to explore what a biologically-inspired AI-powered robot can do, now has an easy way to get started. This sets the stage for future research in learning-based behaviors, prosthetic simulations, and neuro-robotics.
