@@ -1,6 +1,4 @@
-# Neuraville Blogs Repository
-
-Welcome to the Neuraville blog repository! We welcome all blog submissions that showcase integrations with FEAGI or the use of FEAGI in any application. 
+Welcome to the FEAGI blog repository! We welcome all blog submissions that showcase integrations with FEAGI or the use of FEAGI in any application. 
 
 ## Contributing
 
