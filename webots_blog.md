@@ -1,22 +1,53 @@
+
 # Integrating Webots and FEAGI
 By Nathaniel Balkaran, Sophia Thompson, and Shizhen Yang
 
 For our capstone project at the University of Pittsburgh, our goal was to integrate [Webots](https://cyberbotics.com/) with [FEAGI](https://www.feagi.org/). Webots is an application used in industry, research, and education to model, simulate, and program robots. To do this, we created a Webots controller that acts as a bridge between FEAGI and Webots. First we extract sensor data from the robot, then convert it into a format FEAGI could process and send it to the brain. Next, we pull the actuator data from FEAGI's brain, and used it to control the robot.
 
+## Webots
+
+Webots provides a rich environment to simulate a wide variety of robots. Its real-time sensor and actuator interface made it a perfect match for experimenting with brain-controlled behavior. Before diving into integration, we explored the Webots system independently to get comfortable with its environment, learning how to extract and print sensor data and articulate the robot by feeding motors commands.
+![Screenshot-2025-04-10-112843.png](Screenshot-2025-04-10-112843.png "pr2 robot")
+*Webots sample world with robot called pr2 and a table with objects for it to pick up*
+
 ## Development 
 
-The first thing we had to do was get familiar with Webots, as none of us had any experience with it. With the help from [webots reference manual](https://cyberbotics.com/doc/reference/index), we learned how to get the names and types of all deviced on a robot (such as cameras, distance sensors, motors, etc), and get continous data from the sensors. We also learned how to use an external controller (i.e. a controller not within Webots) on robots. We also created simple controllers to move the pioneer2 and pr2 robots. Through this, we realized that Webots does not have servo motors, and instead uses a rotational motor in combination with a position sensor. All of this was very useful as we moved into developing our controller.
-
-We were provided with a FEAGI connector template that already contained code to send data to FEAGI, which allowed us to focus on extracting the data from Webots and then using data sent from FEAGI to control the robot in Webots. 
-
-Before we could send any data to FEAGI, we had to decide what type of FEAGI device each device in Webots is. For some devices this was obvious; for example Webots distance sensors are FEAGI proximity sensors. But in other cases it was less clear. As mentioned above, rotational motors in Webots can also be used as servos, so we had to determine which way one was being used. To do this, we used the maximum and minimum positions of the motors. These fields will both be a non-zero number if the motor is acting as a servo. Webots also has devices that don't have any equivalent in FEAGI, like GPS or receivers and emitters. These devices are not compatible with our controller, but it would be very easy to update the controller to support them in the future.
-
-Once the Webots devices are sorted into lists of their corresponding FEAGI devices by the controller, we use them to generate the capabilities of the robot. We used the FEAGI Configurator in Godot to create some example capabilities files, then made sure that our automatic generator makes a correctly formatted file. The capabilities generator is run automatically every time the controller is run.
-
-Any data that is going to be sent to FEAGI needs to be formatted for FEAGI to understand.
+The first thing we had to do was get familiar with Webots. With the help from the [webots reference manual](https://cyberbotics.com/doc/reference/index), we learned how to interact, obtain names, and types of all devices on a robot (such as cameras, distance sensors, motors, etc). Next, our goal was to learn how to run the controller from our computers terminal instead of executing locally in the webots program. This makes the process of running controllers more versitile, letting us switch between different controller files and robots faster. From our initial exploration of moving the pioneer2 and pr2 robots, we realized that Webots does not have a native servo motor device, but instead uses a rotational motor set to either velocity or position control mode. 
 
 
-- formatting data 
-  - touch sensors
-  - converting camera/lidar data to send to FEAGI
-- creating our own genomes
+We were then provided with a FEAGI connector template file that created a pipeline and gave an example of how to recieve and send data to FEAGI. To be able to exchange FEAGI data, the brain needs an initialization of a FEAGI supported device. This initialized device is held in the capabilities.json file. It holds data such as the name, physical limits, or other settings for each device. We created another file that generates this json file and saturates it with the robots device data we read every time the controller is executed. Webots has devices that FEAGI does not support, like GPS, brakes, speakers, and more. These devices are currently not being read by our controller, but it would be very easy to add this functionality when FEAGI has these devices supported.
+
+
+When speaking to FEAGI, data needs to be formatted in a specific way. For example, a problem that we faced was processing the data from camera or lidar sensors in webots. Webot's cameras send data as a string of bits in RGBA, and FEAGI needs a 2D array holding R,G, and B, arrays. We needed to convert the string to properly formatted arrays, and then delete the A channel. 
+
+
+
+
+
+#### Genome Design
+We designed a custom genome that mapped neurons to the robot's sensors and actuators, enabling more complex control patterns like obstacle avoidance or light following.
+
+
+
+
+
+## Challenges
+
+- **Outdated Webots Documentation**  
+  Some examples were broken or referenced deprecated APIs.
+
+- **FEAGI Docker Build Issues**  
+  The Docker images required manual fixes for compatibility with newer systems.
+
+- **Continuous Camera Output Lag**  
+  Streaming camera frames to FEAGI introduced noticeable latency and performance issues.
+
+- **Colab Pro Limitations**  
+  Colab’s performance limits and unexpected costs led us to cancel premium contracts and seek local alternatives.
+
+
+
+
+## Conclusion
+
+Despite challenges, we successfully achieved integration between Webots and FEAGI. Anyone curious or inspired to explore what a biologically-inspired AI-powered robot can do, now has an easy way to get started. This sets the stage for future research in learning-based behaviors, prosthetic simulations, and neuro-robotics.
