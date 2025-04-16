@@ -2,9 +2,11 @@
 # Integrating Webots and FEAGI
 By Nathaniel Balkaran, Sophia Thompson, and Shizhen Yang
 
-For our capstone project at the University of Pittsburgh, our goal was to integrate [Webots](https://cyberbotics.com/) with [FEAGI](https://www.feagi.org/). Webots is an application used in industry, research, and education to model, simulate, and program robots. To do this, we created a Webots controller that acts as a bridge between FEAGI and Webots. First we extract sensor data from the robot, then convert it into a format FEAGI could process and send it to the brain. Next, we pull the actuator data from FEAGI's brain, and used it to control the robot.
+For our capstone project at the University of Pittsburgh, we set out to integrate [Webots](https://cyberbotics.com/), a profesional robot simulator, and [FEAGI](https://www.feagi.org/), an open-source platform for biologically-inspired artificial general intelligence. Our goal was to create a bi-directional interface, enabling a virtual robot to be controlled by an evolving AI brain.
 
-## Webots
+To achieve this, we developed a custom Webots controller that acts as a communication bridge between FEAGI and the simulation environment. Sensor data is extracted from the robot, then formated so FEAGI could process and transmit to the brain. After processing, the brains actuator commands are recieved and used it to manipulate the robot.
+
+## Exploring Webots
 
 Webots provides a rich environment to simulate a wide variety of robots. Its real-time sensor and actuator interface made it a perfect match for experimenting with brain-controlled behavior. Before diving into integration, we explored the Webots system independently to get comfortable with its environment, learning how to extract and print sensor data and articulate the robot by feeding motors commands.
 ![Screenshot-2025-04-10-112843.png](Screenshot-2025-04-10-112843.png "pr2 robot")
@@ -21,11 +23,12 @@ We were then provided with a FEAGI connector template file that created a pipeli
 When speaking to FEAGI, data needs to be formatted in a specific way. For example, a problem that we faced was processing the data from camera or lidar sensors in webots. Webot's cameras send data as a string of bits in RGBA, and FEAGI needs a 2D array holding R,G, and B, arrays. We needed to convert the string to properly formatted arrays, and then delete the A channel. 
 
 
+The final thing we worked on for this project was creating a sample genome. A genome is instructions for ea
 
 
-
-#### Genome Design
+## Genome Design
 We designed a custom genome that mapped neurons to the robot's sensors and actuators, enabling more complex control patterns like obstacle avoidance or light following.
+(insert genome video)
 
 
 
@@ -48,6 +51,6 @@ We designed a custom genome that mapped neurons to the robot's sensors and actua
 
 
 
-## Conclusion
+## Final Thoughts
 
 Despite challenges, we successfully achieved integration between Webots and FEAGI. Anyone curious or inspired to explore what a biologically-inspired AI-powered robot can do, now has an easy way to get started. This sets the stage for future research in learning-based behaviors, prosthetic simulations, and neuro-robotics.
