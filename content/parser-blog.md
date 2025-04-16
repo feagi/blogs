@@ -62,11 +62,11 @@ Through our development, we had a slowly growing 'graveyard' of unused functions
 
 We were successfully able to construct the parsing program and convert Gazebo SDF files into a standard JSON-formatted model configuration tree. This is passed to the FEAGI Configurator on Godot, where it generates a JSON listing the capabilities of the robot. FEAGI then uses this file with Gazebo in the FEAGI Controller, where it is able to successfully control the robots and receive the proper input. Shown below is a short video of one robot that we had successfully parsed using its camera sensor.
 
-![Robot successfully using camera sensor](/content/gazebo_demo.mp4)
+![video](/content/gazebo_demo.mp4)
 
 Here's another example of our work in action - a robot that we parsed is now able to seamlessly be controlled through FEAGI's brain visualizer in Gazebo.
 
-![Robot successfully being controlled through FEAGI's brain visualizer](/content/gazebo_demo_2.mp4)
+![video](/content/gazebo_demo_2.mp4)
 
 Our work simplified the process of turning simple robotic models into AI-controlled machines using FEAGI. The parser makes this process incredibly simple and efficient, enabling greater accessibility to users of differing skill levels and purpose. 
 
