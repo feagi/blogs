@@ -1,7 +1,8 @@
 # Feagi Mobile App
 **Members:** *[Ben Gradeck](https://www.linkedin.com/in/ben-gradeck-2240031b2/), Huma Mamnoon, Ed Xu, Cole Metrick*
-![FEAGIMAINPAGE](Picture2.png)
 Apr 17, 2025
+
+![FEAGIMAINPAGE](Picture2.png)
 ## Overview
 Our capstone group spent the semester developing an app that allows users to access Neurorobotics Studio on the go. Users can view an active FEAGI session in the Brain Visualizer on their mobile device, trigger and update cortical controls, and send camera and gyroscope data to FEAGI. The app works on both iPhone and Android devices and accepts both portrait and landscape viewing. Through mobile settings, users are afforded different interactions with FEAGI that would not be possible on a computer. Users can stimulate cortical areas on their phone, which could allow for new robotics testing methods. Gyroscope, accelerometer, and camera data can be streamed to cortical areas, the former two of which are impossible to send from standard computers.  
 
