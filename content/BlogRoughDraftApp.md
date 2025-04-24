@@ -35,6 +35,6 @@ Sending API data to Neurorobotics Studio sometimes takes a few seconds/minutes t
 For the future of this project our team would like to see the Godot view update and work correctly with the touch screen controls. Some work was done to diagnose potential problems with touchscreen compatibility on mobile and it was thought that a solution was found. Being able to pan around and interact with the Neurorobotics Studio view was a large goal for this project and we hope that it will be fixed on the web and become available in the app. 
 
 ###App Demo: 
-[demo of our application]([https://youtube.com/shorts/wyHJxUL5yj8?feature=share](https://youtube.com/shorts/wyHJxUL5yj8))
+[demo of our application](https://youtube.com/shorts/wyHJxUL5yj8)
 
 
