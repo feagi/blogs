@@ -36,6 +36,6 @@ For the future of this project our team would like to see the Godot view update 
 
 ### App Demo: 
 
-[![demo of our application](Thumbnail.png)](https://youtube.com/shorts/wyHJxUL5yj8)
+![demo of our application](demo.mov)
 
 
