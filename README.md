@@ -5,7 +5,7 @@ Welcome to the FEAGI blog repository! We welcome all blog submissions that showc
 By submitting a blog post to this repository, you agree to the following terms:
 
 1. **You retain copyright** over your content.
-2. **You grant Neuraville Inc.** a **non-exclusive, royalty-free, and perpetual license** to publish, display, and distribute your content on the [Neurorobotics Studio](https://neurorobotics.studio/blog) website and related platforms.
+2. **You grant Neuraville Inc.** a **non-exclusive, royalty-free, and perpetual license** to publish, display, and distribute your content on the [Neurorobotics Studio](https://brainsforrobots.com/blog) website and related platforms.
 3. Your content will be published under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**, meaning others can share, adapt, and use it commercially, provided they credit you and distribute any derivative works under the same license.
 4. You confirm that your submission does not infringe upon the intellectual property rights of others and that you have all necessary rights to submit the content.
 
@@ -13,7 +13,7 @@ For more details on licensing, please refer to the [LICENSE](LICENSE) file.
 
 ## Blog Creation Guidelines
 
-Make sure the submission is prepared in markdown format and follows the guidelines in this document. When you are ready, simply make a PR on this repositoty. Blogs will be hosted on https://neurorobotics.studio/blog
+Make sure the submission is prepared in markdown format and follows the guidelines in this document. When you are ready, simply make a PR on this repositoty. Blogs will be hosted on https://brainsforrobots.com/blog
 
 ## Organizing Blog Content
 - Create a directory for your blog
