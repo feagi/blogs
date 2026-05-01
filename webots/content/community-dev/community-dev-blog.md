@@ -39,6 +39,7 @@ These videos also became part of a broader goal we had for community development
 This video, for example, shows the Brain Visualizer being used to control Spot the robot dog from Boston Dynamics!
 
 ![Spot robot being controlled by brain visualizer](spot-robot-dog-moving.mp4)
+https://drive.google.com/file/d/1mYpPy773sKuofyVG3pRdvHBmdUzBETed/view?usp=sharing 
 
 ## Sharing With the Community
 
